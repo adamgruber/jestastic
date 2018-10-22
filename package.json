@@ -1,0 +1,37 @@
+{
+  "name": "jestastic",
+  "version": "0.0.1",
+  "description": "Mochawesome reporter for Jest",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test:fn": "jest ./test-functional"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamgruber/jestastic.git"
+  },
+  "keywords": [
+    "jest",
+    "tdd",
+    "test",
+    "mochawesome",
+    "reporter"
+  ],
+  "author": "Adam Gruber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamgruber/jestastic/issues"
+  },
+  "homepage": "https://github.com/adamgruber/jestastic#readme",
+  "jest": {
+    "reporters": [
+      "default",
+      ["<rootDir>/src/jestastic.js", {}]
+    ]
+  }
+}
